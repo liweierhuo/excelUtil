@@ -45,8 +45,6 @@ public class TestExportMap {
     map1.put("birthday","出生日期");
     map1.put("sex","性别");
     File f= new File("test.xls");
-    OutputStream out = new FileOutputStream(f);
-    ExcelUtil.exportExcel(map1,list, out );
-    out.close();
+    ExcelUtil.exportExcel(map1,list, f);
   }
 }
